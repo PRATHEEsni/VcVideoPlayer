@@ -8,18 +8,18 @@ from pyrogram.errors import MessageNotModified
 async def start(client, message):
    buttons = [
             [
-                InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
+                InlineKeyboardButton("❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ❓", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("Dᴇᴠ 👨‍💻", url=f"https://t.me/Pratheek_XD"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📣", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
+                InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about"),
+                InlineKeyboardButton("Dᴇᴠꜱ ❗", callback_data="devs"),
             ],
             [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
             ]
    reply_markup = InlineKeyboardMarkup(buttons)
@@ -36,8 +36,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     if query.data=="help":
         buttons = [
             [
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ ✖️", callback_data="start"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -52,8 +52,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="about":
         buttons = [
             [
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
-                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_GROUP}"),
+                InlineKeyboardButton("Bᴀᴄᴋ ✖️", callback_data="start"),
+                InlineKeyboardButton ("Sᴜᴘᴘᴏʀᴛ 👥", url=f"https://t.me/{SUPPORT_GROUP}"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -68,19 +68,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="devs":
         buttons = [
             [
-                InlineKeyboardButton("Lᴏᴜɪꜱ", url="https://t.me/DeeCodeBots"),
-                InlineKeyboardButton("Eʀʀᴏʀ", url="https://t.me/ProErrorXD"),
+                InlineKeyboardButton("Pʀᴀᴛʜᴇᴇᴋ🥀", url="https://t.me/pratheek06"),
+                InlineKeyboardButton("Nᴏɴᴇ", url="https://t.me/Pratheek_XD"),
             ],
             [
-                InlineKeyboardButton("Bʟᴀᴢᴇ", url="https://t.me/piroXpower"),
-                InlineKeyboardButton("Pʀɪɴᴄᴇ", url="https://t.me/DEVILDAD_PRINCE"),
+                InlineKeyboardButton("Nᴏɴᴇ", url="https://t.me/Pratheek_XD"),
+                InlineKeyboardButton("Nᴏɴᴇ", url="https://t.me/Pratheek_XD"),
             ],
             [
-                InlineKeyboardButton("Hʏᴏᴋᴀ", url="https://t.me/Pratheek_XD"),
-                InlineKeyboardButton("Zᴀʟɪᴍ", url="https://t.me/Jalim_Munda"),
+                InlineKeyboardButton("Nᴏɴᴇ", url="https://t.me/Pratheek_XD"),
+                InlineKeyboardButton("Nᴏɴᴇ", url="https://t.me/Pratheek_XD"),
             ],
             [
-                InlineKeyboardButton("Bᴀᴄᴋ", callback_data="start"),
+                InlineKeyboardButton("Bᴀᴄᴋ ✖️", callback_data="start"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -95,18 +95,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data=="start":
         buttons = [
             [
-                InlineKeyboardButton("Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ", callback_data="help"),
+                InlineKeyboardButton("❔Hᴇʟᴘ & Cᴏᴍᴍᴀɴᴅꜱ❓", callback_data="help"),
             ],
             [
-                InlineKeyboardButton("Sᴏᴜʀᴄᴇ", url=f"https://{SOURCE_CODE}"),
-                InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                InlineKeyboardButton("Dᴇᴠ 👨‍💻", url=f"https://t.me/Pratheek_XD"),
+                InlineKeyboardButton("Cʜᴀɴɴᴇʟ 📣", url=f"https://t.me/{UPDATES_CHANNEL}"),
             ],
             [
-                InlineKeyboardButton("Aʙᴏᴜᴛ", callback_data="about"),
-                InlineKeyboardButton("Dᴇᴠꜱ", callback_data="devs"),
+                InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about"),
+                InlineKeyboardButton("Dᴇᴠꜱ ❗", callback_data="devs"),
             ],
             [
-               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
+               InlineKeyboardButton("Sᴜᴍᴍᴏɴ Mᴇ 💞", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
